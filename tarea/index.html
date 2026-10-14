@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tarea - Gestor de Tareas</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 500px;
+        margin: 30px auto;
+      }
+      .completada {
+        text-decoration: line-through;
+        color: #888;
+      }
+      .error {
+        color: red;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      button {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gestor de Tareas Pendientes</h1>
+
+    <form id="formTarea">
+      <input id="txtTarea" type="text" placeholder="Nombre de la tarea" />
+      <select id="selPrioridad">
+        <option value="Baja">Baja</option>
+        <option value="Media">Media</option>
+        <option value="Alta">Alta</option>
+      </select>
+      <button type="submit">Agregar Tarea</button>
+    </form>
+
+    <p id="msgError" class="error"></p>
+
+    <h3>Lista de Tareas:</h3>
+    <ul id="listaTareas"></ul>
+
+    <script src="app.js"></script>
+  </body>
+</html>
